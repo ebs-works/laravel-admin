@@ -1,0 +1,56 @@
+{
+    "name": "ebs-works/laravel-admin",
+    "description": "A quick way to set up an admin panel, API endpoints and routing for a Laravel project",
+    "keywords": [
+        "escalier-business-solution",
+        "laravel-admin",
+        "laravel",
+        "admin"
+    ],
+    "homepage": "https://github.com/ebs-works/laravel-admin",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Escaliers Business Solution",
+            "email": "info@escalierssolution.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0",
+        "spatie/laravel-html": "^3.2",
+        "tymon/jwt-auth": "^2.0",
+        "yajra/laravel-datatables-oracle": "^10.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EscaliersSolution\\LaravelAdmin\\": "src"
+        },
+        "files": [
+            "src/Helpers/main.php"
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EscaliersSolution\\LaravelAdmin\\LaravelAdminServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAdmin": "EscaliersSolution\\LaravelAdmin\\Facades\\LaravelAdmin"
+            }
+        }
+    }
+}

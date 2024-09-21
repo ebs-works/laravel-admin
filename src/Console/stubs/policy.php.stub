@@ -1,0 +1,11 @@
+<?php
+
+namespace DummyNamespace;
+
+use EscaliersSolution\LaravelAdmin\Policies\CrudPolicy;
+use App\Models\User;
+
+class DummyClass extends CrudPolicy
+{
+    
+}

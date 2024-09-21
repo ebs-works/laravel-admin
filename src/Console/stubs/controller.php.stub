@@ -1,0 +1,11 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use EscaliersSolution\LaravelAdmin\Http\Controllers\AdminModelController;
+
+class DummyClass extends AdminModelController
+{
+    
+}

@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use EscaliersSolution\LaravelAdmin\Models\BaseModel;
+
+class DummyClass extends BaseModel
+{
+    
+}
